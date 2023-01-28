@@ -1,0 +1,26 @@
+$body-color: #333333;
+$primary: #9873FF;
+$border-radius: 0;
+$min-contrast-ratio: 3;
+$color-contrast-dark: #9873FF;
+
+$input-btn-padding-y: .75rem;
+$input-btn-padding-x: 1.65rem;
+
+$tooltip-bg: #5B46A9;
+$tooltip-border-radius: 0;
+$tooltip-opacity: 1;
+$tooltip-arrow-width: .625rem;
+$tooltip-arrow-height: .4rem;
+$spacer: 1rem;
+$tooltip-padding-y: $spacer * .5;
+$tooltip-padding-x: $spacer * .875;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-outline-primary:hover {
+  background: #B89EFF;
+  border: 1px solid #9873FF;
+}
+
+

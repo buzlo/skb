@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #fff;
+  box-shadow: 0px 9.03012px 27.0904px rgba(176, 190, 197, 0.32), 0px 3.38629px 5.64383px rgba(176, 190, 197, 0.32);
+}
+.header__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header__logo {
+  max-height: 50px;
+}
+.header__search-input {
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  padding: 12px 16px 13px;
+  flex-basis: 581px;
+  flex-grow: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #B0B0B0;
+}
+
+.clients__container {
+  padding: 40px 7px;
+}
+
+.theaders__btn {
+  vertical-align: middle;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #B0B0B0;
+}
+.theaders__arrow {
+  width: 12px;
+  height: 12px;
+}
+.theaders__alphabet {
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  color: #9873FF;
+}
+
+.clients__table {
+  margin-bottom: 40px;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: #fff;
+}
+.clients__id {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #B0B0B0;
+}
+.clients__time {
+  padding-left: 7px;
+  color: #B0B0B0;
+}
+.clients__actions {
+  font-size: 0;
+}
+.clients__add-btn {
+  margin: 0 auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+.clients__add-btn:focus {
+  background-color: #9873FF;
+  color: #fff;
+}
+.clients__add-btn:active {
+  background-color: #8052FF;
+}
+.clients__add-btn > svg {
+  width: 23px;
+  height: 16px;
+  margin-right: 10px;
+  fill: #9873FF;
+  transition: fill 0.15s ease-in-out;
+}
+.clients__add-btn:focus > svg, .clients__add-btn:focus-visible > svg, .clients__add-btn:hover > svg, .clients__add-btn:active > svg {
+  fill: #fff;
+}
+
+.contacts__svg {
+  margin-right: 7px;
+  width: 16px;
+  height: 16px;
+}
+
+.tooltip {
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.actions__wrapper {
+  flex-wrap: wrap;
+}
+.actions__btn:not(:last-child) {
+  margin-right: 32px;
+}
+.actions__btn {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0;
+  align-items: center;
+}
+.actions__svg {
+  width: 12px;
+  height: 12px;
+  margin-right: 2px;
+}

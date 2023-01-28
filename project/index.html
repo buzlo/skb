@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skb. CRM Interface</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="js/index.js"></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      initClientsTable();
+    })
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container-fluid py-2 py-md-3">
+      <div class="row">
+        <svg class="header__logo col-12 col-md-1" viewBox="0 0 50 50">
+          <use xlink:href="img/sprite.svg#skb"></use>
+        </svg>
+        <input type="text" class="header__search-input col d-md-inline-block d-none"
+               placeholder="Введите запрос">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="clients">
+      <div class="clients__container container">
+        <h1 class="clients__title row">Клиенты</h1>
+        <div class="clients__wrapper row">
+          <table class="clients__table table table-hover table-fixed mb-4" id="clients-table">
+            <thead>
+              <tr class="clients__theaders theaders">
+                <th scope="col" class="col-1">
+                  <button class="theaders__btn btn" id="id-btn">
+                    ID
+                    <svg class="theaders__arrow" viewBox="0 0 12 12">
+                      <use xlink:href="img/sprite.svg#arrow-down" />
+                    </svg>
+                  </button>
+                </th>
+                <th scope="col" class="col-3">
+                  <button class="theaders__btn btn">
+                    Фамилия имя отчество
+                    <svg class="theaders__arrow" viewBox="0 0 12 12">
+                      <use xlink:href="img/sprite.svg#arrow-down" />
+                    </svg>
+                    <span class="theaders__alphabet">А-Я</span>
+                  </button>
+                </th>
+                <th scope="col" class="col-2">
+                  <button class="theaders__btn btn">
+                    Дата и время создания
+                    <svg class="theaders__arrow" viewBox="0 0 12 12">
+                      <use xlink:href="img/sprite.svg#arrow-down" />
+                    </svg>
+                  </button>
+                </th>
+                <th scope="col" class="col-2">
+                  <button class="theaders__btn btn">
+                    Последние изменения
+                    <svg class="theaders__arrow" viewBox="0 0 12 12">
+                      <use xlink:href="img/sprite.svg#arrow-down" />
+                    </svg>
+                  </button>
+                </th>
+                <th scope="col" class="col-1"><button class="theaders__btn btn">Контакты</button>
+                </th>
+                <th scope="col" class="col-3"><button class="theaders__btn btn">Действия</button>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="clients-tbody">
+              <tr class="clients__row">
+                <td class="clients__id col-1">123455</td>
+                <td class="clients__full-name col-3">Скворцов Денис Юрьевич</td>
+                <td class="clients__created col-2">21.02.2021<span
+                        class="clients__time">12:41</span>
+                </td>
+                <td class="clients__edited col-2">21.02.2021<span class="clients__time">14:50</span>
+                </td>
+                <td class="clients__contacts contacts col-1">
+                  <ul class="contacts__list flex">
+                    <li class="contacts__item">
+                      <a class="contacts__link" href="#" data-bs-toggle="tooltip"
+                         data-bs-title="Tooltip on top">
+                        <svg class="contacts__svg">
+                          <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="contacts__item">
+                      <a class="contacts__link" href="#" data-bs-toggle="tooltip"
+                         data-bs-title="Tooltip on top">
+                        <svg class="contacts__svg">
+                          <use xlink:href="img/sprite.svg#email"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </td>
+                <td class="clients__actions actions col-3">
+                  <div class="actions__wrapper flex">
+                    <button class="actions__btn btn flex">
+                      <svg class="actions__svg">
+                        <use xlink:href="img/sprite.svg#pen"></use>
+                      </svg>
+                      <span>Изменить</span>
+                    </button>
+                    <button class="actions__btn btn flex">
+                      <svg class="actions__svg">
+                        <use xlink:href="img/sprite.svg#cross"></use>
+                      </svg>
+                      <span>Удалить</span>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="clients__add-btn add-btn btn btn-outline-primary">
+            <svg class="add-btn__svg" viewBox="0 0 23 16">
+              <use xlink:href="img/sprite.svg#add" />
+            </svg>Добавить клиента</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
