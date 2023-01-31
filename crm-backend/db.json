@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Денис",
+    "surname": "Скворцов",
+    "lastName": "Юрьевич",
+    "contacts": [
+      {
+        "type": "Телефон",
+        "value": "+79645279624"
+      },
+      {
+        "type": "E-mail",
+        "value": "skvorstsov.denis@mail.ru"
+      },
+      {
+        "type": "Facebook",
+        "value": "SkvorstsovDenis"
+      },
+      {
+        "type": "VK",
+        "value": "skvorstsov.denis"
+      },
+      {
+        "type": "Twitter",
+        "value": "@den_77"
+      }
+    ],
+    "id": "1674649747642",
+    "updatedAt": "2023-01-19T14:29:07.642Z",
+    "createdAt": "2022-03-01T09:02:07.642Z"
+  },
+  {
+    "name": "Арсений",
+    "surname": "Куприянов",
+    "lastName": "Валерьевич",
+    "contacts": [
+      {
+        "type": "Телефон",
+        "value": "skvorstsov.denis"
+      },
+      {
+        "type": "E-mail",
+        "value": "kupriyanov.a@yandex.ru"
+      }
+    ],
+    "id": "1674649747651",
+    "updatedAt": "2022-12-25T12:45:07.652Z",
+    "createdAt": "2022-12-25T11:28:07.652Z"
+  },
+  {
+    "name": "Людмила",
+    "surname": "Константинопольская",
+    "lastName": "Александровна",
+    "contacts": [
+      {
+        "type": "Телефон",
+        "value": "+79058243842"
+      },
+      {
+        "type": "E-mail",
+        "value": "kolual@mail.ru"
+      },
+      {
+        "type": "Facebook",
+        "value": "LuKonst"
+      }
+    ],
+    "id": "1674649747654",
+    "updatedAt": "2023-01-25T16:31:07.654Z",
+    "createdAt": "2022-09-19T10:24:07.654Z"
+  },
+  {
+    "name": "Олег",
+    "surname": "Дмитриевский",
+    "lastName": "Алексеевич",
+    "contacts": [
+      {
+        "type": "Телефон",
+        "value": "+79272348216"
+      }
+    ],
+    "id": "1674649747658",
+    "updatedAt": "2023-01-12T13:04:07.658Z",
+    "createdAt": "2022-10-17T15:18:07.658Z"
+  },
+  {
+    "name": "Татьяна",
+    "surname": "Александрова",
+    "lastName": "Павловна",
+    "contacts": [
+      {
+        "type": "Телефон",
+        "value": "+79371625843"
+      },
+      {
+        "type": "E-mail",
+        "value": "tapav@yandex.ru"
+      },
+      {
+        "type": "VK",
+        "value": "id5652546"
+      }
+    ],
+    "id": "1674649747661",
+    "updatedAt": "2023-01-22T17:34:07.661Z",
+    "createdAt": "2021-01-25T14:54:07.661Z"
+  }
+]

@@ -72,7 +72,7 @@ ul {
   padding: 40px 7px;
 }
 
-.theaders__btn {
+.thead__btn, .thead__th {
   vertical-align: middle;
   padding: 0;
   border: none;
@@ -82,11 +82,17 @@ ul {
   line-height: 16px;
   color: #B0B0B0;
 }
-.theaders__arrow {
+.thead__btn.active, .thead__th.active {
+  color: #333333;
+}
+.thead__btn:hover {
+  color: #333333;
+}
+.thead__arrow {
   width: 12px;
   height: 12px;
 }
-.theaders__alphabet {
+.thead__alphabet {
   font-weight: 600;
   font-size: 10px;
   line-height: 14px;

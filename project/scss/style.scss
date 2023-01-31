@@ -77,8 +77,8 @@ ul {
   padding: 40px 7px;
 }
 
-.theaders {
-  &__btn {
+.thead {
+  &__btn, &__th {
     vertical-align: middle;
     padding: 0;
     border: none;
@@ -87,6 +87,14 @@ ul {
     font-size: 12px;
     line-height: 16px;
     color: #B0B0B0;
+
+    &.active {
+      color: #333333;
+    }
+  }
+
+  &__btn:hover {
+    color: #333333;
   }
 
   &__arrow {
