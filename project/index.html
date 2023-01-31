@@ -50,7 +50,7 @@
                 </th>
                 <th scope="col" class="col-3">
                   <button class="theaders__btn btn">
-                    Фамилия имя отчество
+                    Фамилия имя отчество&nbsp;
                     <svg class="theaders__arrow" viewBox="0 0 12 12">
                       <use xlink:href="img/sprite.svg#arrow-down" />
                     </svg>
@@ -59,7 +59,7 @@
                 </th>
                 <th scope="col" class="col-2">
                   <button class="theaders__btn btn">
-                    Дата и время создания
+                    Дата и время создания&nbsp;
                     <svg class="theaders__arrow" viewBox="0 0 12 12">
                       <use xlink:href="img/sprite.svg#arrow-down" />
                     </svg>
@@ -67,7 +67,7 @@
                 </th>
                 <th scope="col" class="col-2">
                   <button class="theaders__btn btn">
-                    Последние изменения
+                    Последние изменения&nbsp;
                     <svg class="theaders__arrow" viewBox="0 0 12 12">
                       <use xlink:href="img/sprite.svg#arrow-down" />
                     </svg>
@@ -79,50 +79,13 @@
                 </th>
               </tr>
             </thead>
-            <tbody id="clients-tbody">
-              <tr class="clients__row">
-                <td class="clients__id col-1">123455</td>
-                <td class="clients__full-name col-3">Скворцов Денис Юрьевич</td>
-                <td class="clients__created col-2">21.02.2021<span
-                        class="clients__time">12:41</span>
-                </td>
-                <td class="clients__edited col-2">21.02.2021<span class="clients__time">14:50</span>
-                </td>
-                <td class="clients__contacts contacts col-1">
-                  <ul class="contacts__list flex">
-                    <li class="contacts__item">
-                      <a class="contacts__link" href="#" data-bs-toggle="tooltip"
-                         data-bs-title="Tooltip on top">
-                        <svg class="contacts__svg">
-                          <use xlink:href="img/sprite.svg#phone"></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="contacts__item">
-                      <a class="contacts__link" href="#" data-bs-toggle="tooltip"
-                         data-bs-title="Tooltip on top">
-                        <svg class="contacts__svg">
-                          <use xlink:href="img/sprite.svg#email"></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </td>
-                <td class="clients__actions actions col-3">
-                  <div class="actions__wrapper flex">
-                    <button class="actions__btn btn flex">
-                      <svg class="actions__svg">
-                        <use xlink:href="img/sprite.svg#pen"></use>
-                      </svg>
-                      <span>Изменить</span>
-                    </button>
-                    <button class="actions__btn btn flex">
-                      <svg class="actions__svg">
-                        <use xlink:href="img/sprite.svg#cross"></use>
-                      </svg>
-                      <span>Удалить</span>
-                    </button>
-                  </div>
+            <tbody class="clients__tbody" id="clients-tbody">
+              <tr class="clients__placeholder d-none" id="clients-placeholder">
+                <td colspan="6">
+                  <svg class="clients__spinner" width="100" heigth="100" viewBox="0 0 100 100">
+                    <use xlink:href="img/sprite.svg#spinner-large" />
+                  </svg>
+                  <span class="visually-hidden">Loading...</span>
                 </td>
               </tr>
             </tbody>

@@ -34,6 +34,13 @@
           fill="#9873FF" />
   </symbol>
 
+  <symbol id="contact" width="16" height="16" viewBox="0 0 16 16" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM3 8C3 5.24 5.24 3 8 3C10.76 3 13 5.24 13 8C13 10.76 10.76 13 8 13C5.24 13 3 10.76 3 8ZM9.5 6C9.5 5.17 8.83 4.5 8 4.5C7.17 4.5 6.5 5.17 6.5 6C6.5 6.83 7.17 7.5 8 7.5C8.83 7.5 9.5 6.83 9.5 6ZM5 9.99C5.645 10.96 6.75 11.6 8 11.6C9.25 11.6 10.355 10.96 11 9.99C10.985 8.995 8.995 8.45 8 8.45C7 8.45 5.015 8.995 5 9.99Z"
+          fill="#9873FF" />
+  </symbol>
+
   <symbol id="pen" width="13" height="13" viewBox="0 0 13 13" fill="none"
           xmlns="http://www.w3.org/2000/svg">
     <path d="M0 10.5V13H2.5L9.87333 5.62662L7.37333 3.12662L0 10.5ZM11.8067 3.69329C12.0667 3.43329 12.0667 3.01329 11.8067 2.75329L10.2467 1.19329C9.98667 0.933291 9.56667 0.933291 9.30667 1.19329L8.08667 2.41329L10.5867 4.91329L11.8067 3.69329Z"
@@ -57,7 +64,8 @@
           fill="#9873FF" />
   </symbol>
 
-  <symbol id="arrow-down" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="arrow-down" width="12" height="12" viewBox="0 0 12 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
     <g opacity="0.7" clip-path="url(#clip0_121_2332)">
       <path d="M10 6L9.295 5.295L6.5 8.085L6.5 2H5.5L5.5 8.085L2.71 5.29L2 6L6 10L10 6Z"
             fill="#9873FF" />
@@ -67,6 +75,12 @@
         <rect width="12" height="12" fill="white" />
       </clipPath>
     </defs>
+  </symbol>
+
+  <symbol id="spinner-large" width="100" height="100" viewBox="0 0 100 100" fill="none"
+       xmlns="http://www.w3.org/2000/svg">
+    <path d="M14.0002 50.0005C14.0002 69.8825 30.1182 86.0005 50.0002 86.0005C69.8822 86.0005 86.0002 69.8825 86.0002 50.0005C86.0002 30.1185 69.8823 14.0005 50.0003 14.0005C45.3513 14.0005 40.9082 14.8815 36.8282 16.4865"
+          stroke="#9873FF" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" />
   </symbol>
 
 </svg>

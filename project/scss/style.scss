@@ -41,7 +41,6 @@ ul {
   display: flex;
 }
 
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -114,7 +113,30 @@ ul {
     font-size: 14px;
     line-height: 19px;
 
+  }
+
+  &__tbody {
     background-color: #fff;
+  }
+
+  &__placeholder {
+    height: 300px;
+    text-align: center;
+  }
+
+  &__spinner {
+    width: 72px;
+    height: 72px;
+    animation: rotate 1s linear infinite;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 
   &__id {
@@ -192,7 +214,18 @@ ul {
   &__btn {
     max-width: fit-content;
     padding: 0;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
     align-items: center;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &__btn:hover {
+    color: #9873FF;
   }
 
   &__svg {

@@ -100,7 +100,35 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+}
+.clients__tbody {
   background-color: #fff;
+}
+.clients__placeholder {
+  height: 300px;
+  text-align: center;
+}
+.clients__spinner {
+  width: 72px;
+  height: 72px;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .clients__id {
   font-weight: 400;
@@ -165,7 +193,16 @@ ul {
   max-width: -moz-fit-content;
   max-width: fit-content;
   padding: 0;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
   align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+.actions__btn:hover {
+  color: #9873FF;
 }
 .actions__svg {
   width: 12px;
