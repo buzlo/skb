@@ -85,13 +85,21 @@
             $elem.classList.remove('active', 'active_up', 'active_down');
             const $use = $elem.querySelector('use');
             $use.setAttribute('xlink:href', `img/sprite.svg#arrow-up`);
+            if ($elem.id === 'full-name-btn') {
+              const $alphabet = $elem.querySelector('.thead__alphabet');
+              $alphabet.textContent = 'А-Я';
+            }
           }
         }
       }
     }
+
+  };
+
+  function initBsTooltips () {
     const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
     const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-  };
+  }
 
   window.initClientsTable = initClientsTable;
 
@@ -125,6 +133,8 @@
       const $tr = addClientTR($tbody, client);
       $clientRows.push($tr);
     }
+
+    initBsTooltips();
 
     function addClientTR($tbody, client) {
       const $tr = document.createElement('tr');
