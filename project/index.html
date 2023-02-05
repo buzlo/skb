@@ -9,18 +9,21 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/choices.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="node_modules/choices.js/public/assets/scripts/choices.js"></script>
   <script defer src="js/index.js"></script>
   <script defer>
     document.addEventListener('DOMContentLoaded', () => {
-      initClientsTable();
+      const $tbody = document.getElementById('clients-tbody')
+      initClientsTable($tbody);
     })
   </script>
 </head>
 
-<body>
+<body id="body">
   <header class="header">
     <div class="header__container container-fluid py-2 py-md-3">
       <div class="row">
@@ -38,7 +41,7 @@
         <h1 class="clients__title row">Клиенты</h1>
         <div class="clients__wrapper row">
           <table class="clients__table table table-hover table-fixed mb-4" id="clients-table">
-            <thead class="clients__thead-row thead" >
+            <thead class="clients__thead-row thead">
               <tr class="thead__row">
                 <th scope="col" class="thead__th col-1">
                   <button class="thead__btn btn active active_up" id="id-btn">
@@ -88,14 +91,18 @@
               </tr>
             </tbody>
           </table>
-          <button class="clients__add-btn add-btn btn btn-outline-primary">
-            <svg class="add-btn__svg" viewBox="0 0 23 16">
+          <button class="clients__new-client-btn new-client-btn btn btn-outline-primary flex"
+                  id="new-client-btn">
+            <svg class="new-client-btn__svg" viewBox="0 0 23 16">
               <use xlink:href="img/sprite.svg#add" />
-            </svg>Добавить клиента</button>
+            </svg>
+            <span class="new-client-btn__span">Добавить клиента</span>
+          </button>
         </div>
       </div>
     </section>
   </main>
+
 </body>
 
 </html>

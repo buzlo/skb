@@ -1,11 +1,27 @@
 $body-color: #333333;
 $primary: #9873FF;
 $border-radius: 0;
+$border-color: rgba(200, 197, 209, 0.5);
+$input-border-color: #C8C5D1;
 $min-contrast-ratio: 3;
 $color-contrast-dark: #9873FF;
 
+$input-font-size: 14px;
+$input-line-height: 1.36;
+$input-padding-y: 8px;
+$input-padding-x: 12px;
 $input-btn-padding-y: .75rem;
 $input-btn-padding-x: 1.65rem;
+$input-group-addon-bg: #e7e5eb;
+$input-focus-box-shadow: none;
+
+$modal-md: 450px;
+$modal-content-border-radius: 0;
+$modal-inner-padding: 25px 30px;
+$input-placeholder-color: #B0B0B0;
+$btn-link-color: $body-color;
+$btn-link-padding-y: 5px;
+$btn-link-hover-color: #B89EFF;
 
 $tooltip-max-width: 300px;
 $tooltip-bg: #5B46A9;
@@ -18,6 +34,16 @@ $tooltip-padding-y: $spacer * .5;
 $tooltip-padding-x: $spacer * .875;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.btn-primary:hover {
+  background: #B89EFF;
+  border-color: #B89EFF;
+}
+
+.btn-primary:active {
+  background: #8052FF;
+  border-color: #8052FF;
+}
 
 .btn-outline-primary:hover {
   background: #B89EFF;
