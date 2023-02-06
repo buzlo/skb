@@ -17,7 +17,7 @@
   <script defer src="js/index.js"></script>
   <script defer>
     document.addEventListener('DOMContentLoaded', () => {
-      const $tbody = document.getElementById('clients-tbody')
+      const $tbody = document.getElementById('clients-tbody');
       initClientsTable($tbody);
     })
   </script>
@@ -31,7 +31,7 @@
           <use xlink:href="img/sprite.svg#skb"></use>
         </svg>
         <input type="text" class="header__search-input col d-md-inline-block d-none"
-               placeholder="Введите запрос">
+               placeholder="Введите запрос" id="search-input">
       </div>
     </div>
   </header>

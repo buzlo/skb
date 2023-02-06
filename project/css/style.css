@@ -105,11 +105,15 @@ ul {
   padding: 12px 16px 13px;
   flex-basis: 581px;
   flex-grow: 0;
+  outline: none;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   color: #B0B0B0;
+}
+.header__search-input:focus {
+  border-color: #9873FF;
 }
 
 .clients__container {
@@ -362,7 +366,7 @@ ul {
 }
 .form-contacts__remove {
   position: relative;
-  z-index: 2;
+  z-index: 5;
   padding: 6px;
   transition: border-color 0.15s ease-in-out;
 }

@@ -18,6 +18,8 @@
 
     addSortListeners();
 
+    addSearchInputListener();
+
     $newClientBtn.addEventListener('click', () => {
       const $modal = createModal('new');
       $pageBody.append($modal);
@@ -431,7 +433,8 @@
         }
       }
 
-      function createModalBody(type, client, { onConfirm, onCancel }) {``
+      function createModalBody(type, client, { onConfirm, onCancel }) {
+        ``
         const $modalBody = document.createElement('div');
 
         $modalBody.classList.add('modal-body', 'modal__body');
@@ -701,6 +704,28 @@
       }
     }
 
+    function addSearchInputListener() {
+      const $searchInput = document.getElementById('search-input');
+      let timeout = null;
+
+      $searchInput.addEventListener('input', () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(async () => {
+          placeholder.classList.remove('d-none');
+          const searchedClients = await searchClients($searchInput.value);
+          rebuildClientsTable(searchedClients);
+          placeholder.classList.add('d-none');
+      }, 500);
+      });
+
+      async function searchClients(searchQuery) {
+        let url = new URL(`${SERVER_PATH}/api/clients`);
+        url.searchParams.set('search', searchQuery);
+        response = await fetch(url);
+        const data = response.json();
+        return data;
+      }
+    }
   };
 
   window.initClientsTable = initClientsTable;
