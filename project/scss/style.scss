@@ -7,6 +7,16 @@
   left: 0;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 html {
   box-sizing: border-box;
 }
@@ -145,10 +155,6 @@ ul {
   }
 }
 
-.clients__container {
-  padding: 40px 7px;
-}
-
 .thead {
 
   &__btn,
@@ -186,6 +192,15 @@ ul {
 }
 
 .clients {
+  &__container {
+    padding: 40px 20px;
+  }
+
+  &__table-wrapper {
+    overflow-x: scroll;
+    margin-bottom: 24px;
+  }
+
   &__table {
     margin-bottom: 40px;
 
@@ -202,24 +217,23 @@ ul {
   }
 
   &__placeholder {
+    position: relative;
     height: 300px;
     text-align: center;
+  }
+
+  &__spinner-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50vw;
+    transform: translate(-50%, -50%);
   }
 
   &__spinner {
     width: 72px;
     height: 72px;
     animation: rotate 1s linear infinite;
-  }
-
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
   }
 
   &__id {
@@ -273,10 +287,16 @@ ul {
   }
 }
 
-.contacts__svg {
-  margin-right: 7px;
-  width: 16px;
-  height: 16px;
+.contacts {
+  &__list {
+    flex-wrap: wrap;
+  }
+
+  &__svg {
+    margin-right: 7px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .tooltip {
@@ -318,6 +338,10 @@ ul {
     height: 12px;
     margin-right: 2px;
     fill: #F06A4D;
+
+    &_rotate {
+      animation: rotate 1s linear infinite;
+    }
   }
 }
 

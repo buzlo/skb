@@ -261,9 +261,16 @@
               case 'edit':
                 textContent = 'Изменить';
                 svgId = 'pen';
+                const $spinner = createSvg(['img/sprite.svg#spinner-small']);
+                $spinner.classList.add('actions__svg', 'actions__svg_rotate', 'd-none');
+                $btn.append($spinner);
                 $btn.addEventListener('click', async () => {
+                  $svg.classList.add('d-none');
+                  $spinner.classList.remove('d-none');
                   const clientData = await getClientData(client.id);
-                  onEdit(clientData)
+                  $spinner.classList.add('d-none');
+                  $svg.classList.remove('d-none');
+                  onEdit(clientData);
                 });
                 break;
               case 'delete':
@@ -485,7 +492,8 @@
             inputNames = ['surname', 'name', 'lastName'],
             $inputsObj = {},
             contacts = clientData ? clientData.contacts : null,
-            $formContactsBlock = createFormContactsBlock(contacts);
+            contactItemObjs = [],
+            $formContactsBlock = createFormContactsBlock(contacts, contactItemObjs);
 
           for (let name of inputNames) {
             const placeholder = name === 'surname' ? 'Фамилия' : name === 'name' ? 'Имя' : name === 'lastName' ? 'Отчество' : '',
@@ -541,7 +549,7 @@
 
           return $form;
 
-          function createFormContactsBlock(contacts) {
+          function createFormContactsBlock(contacts, contactItemObjs) {
             const $formContactsBlock = document.createElement('div'),
               $contactsList = document.createElement('ul'),
               $newContactBtn = document.createElement('button'),
@@ -549,8 +557,7 @@
                 "img/sprite.svg#plus",
                 "img/sprite.svg#plus-hover",
               ]),
-              $newContactBtnText = document.createElement('span'),
-              contactItemObjs = [];
+              $newContactBtnText = document.createElement('span');
 
             $formContactsBlock.classList.add('modal__form-contacts', 'form-contacts', 'flex');
             $contactsList.classList.add('form-contacts__list');
@@ -649,6 +656,7 @@
                   searchEnabled: false,
                   itemSelectText: '',
                   shouldSort: false,
+                  allowHTML: false,
                   classNames: {
                     inputCloned: 'choices__input_cloned',
                     listItems: 'choices__list_multiple',

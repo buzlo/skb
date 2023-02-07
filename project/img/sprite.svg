@@ -82,6 +82,19 @@
           stroke="#9873FF" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round" />
   </symbol>
 
+  <symbol id="spinner-small" width="12" height="12" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_121_1937)">
+      <path d="M3.00008 8.03996C3.00008 10.8234 5.2566 13.08 8.04008 13.08C10.8236 13.08 13.0801 10.8234 13.0801 8.03996C13.0801 5.25648 10.8236 2.99996 8.04008 2.99996C7.38922 2.99996 6.7672 3.1233 6.196 3.348"
+            stroke="#9873FF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_121_1937">
+        <rect width="16" height="16" fill="white" />
+      </clipPath>
+    </defs>
+  </symbol>
+
+
 
   <symbol id="plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -95,7 +108,8 @@
           fill="#9873FF" />
   </symbol>
 
-  <symbol id="select-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="select-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0_121_2437)">
       <path d="M10.505 8.30978C10.75 8.06478 10.75 7.66978 10.505 7.42478L6.34997 3.26978C6.15497 3.07478 5.83997 3.07478 5.64497 3.26978L1.48997 7.42478C1.24497 7.66978 1.24497 8.06478 1.48997 8.30978C1.73497 8.55478 2.12997 8.55478 2.37497 8.30978L5.99997 4.68978L9.62497 8.31478C9.86497 8.55478 10.265 8.55478 10.505 8.30978Z"
             fill="#9873FF" />

@@ -38,9 +38,11 @@
   <main>
     <section class="clients">
       <div class="clients__container container">
-        <h1 class="clients__title row">Клиенты</h1>
-        <div class="clients__wrapper row">
-          <table class="clients__table table table-hover table-fixed mb-4" id="clients-table">
+        <div class="clients__table-wrapper">
+          <h1 class="clients__title">
+            <span class="col">Клиенты</span>
+          </h1>
+          <table class="clients__table table table-hover table-fixed" id="clients-table">
             <thead class="clients__thead-row thead">
               <tr class="thead__row">
                 <th scope="col" class="thead__th col-1">
@@ -83,22 +85,24 @@
             <tbody class="clients__tbody" id="clients-tbody">
               <tr class="clients__placeholder d-none" id="clients-placeholder">
                 <td colspan="6">
-                  <svg class="clients__spinner" width="100" heigth="100" viewBox="0 0 100 100">
-                    <use xlink:href="img/sprite.svg#spinner-large" />
-                  </svg>
+                  <span class="clients__spinner-wrapper">
+                    <svg class="clients__spinner" width="100" heigth="100" viewBox="0 0 100 100">
+                      <use xlink:href="img/sprite.svg#spinner-large" />
+                    </svg>
+                  </span>
                   <span class="visually-hidden">Loading...</span>
                 </td>
               </tr>
             </tbody>
           </table>
-          <button class="clients__new-client-btn new-client-btn btn btn-outline-primary flex"
-                  id="new-client-btn">
-            <svg class="new-client-btn__svg" viewBox="0 0 23 16">
-              <use xlink:href="img/sprite.svg#add" />
-            </svg>
-            <span class="new-client-btn__span">Добавить клиента</span>
-          </button>
         </div>
+        <button class="clients__new-client-btn new-client-btn btn btn-outline-primary flex"
+                id="new-client-btn">
+          <svg class="new-client-btn__svg" viewBox="0 0 23 16">
+            <use xlink:href="img/sprite.svg#add" />
+          </svg>
+          <span class="new-client-btn__span">Добавить клиента</span>
+        </button>
       </div>
     </section>
   </main>

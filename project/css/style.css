@@ -1,3 +1,19 @@
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -116,10 +132,6 @@ ul {
   border-color: #9873FF;
 }
 
-.clients__container {
-  padding: 40px 7px;
-}
-
 .thead__btn, .thead__th {
   vertical-align: middle;
   padding: 0;
@@ -147,6 +159,13 @@ ul {
   color: #9873FF;
 }
 
+.clients__container {
+  padding: 40px 20px;
+}
+.clients__table-wrapper {
+  overflow-x: scroll;
+  margin-bottom: 24px;
+}
 .clients__table {
   margin-bottom: 40px;
   vertical-align: middle;
@@ -159,30 +178,22 @@ ul {
   background-color: #fff;
 }
 .clients__placeholder {
+  position: relative;
   height: 300px;
   text-align: center;
+}
+.clients__spinner-wrapper {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
 }
 .clients__spinner {
   width: 72px;
   height: 72px;
   -webkit-animation: rotate 1s linear infinite;
           animation: rotate 1s linear infinite;
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 .clients__id {
   font-weight: 400;
@@ -225,6 +236,9 @@ ul {
   line-height: 19px;
 }
 
+.contacts__list {
+  flex-wrap: wrap;
+}
 .contacts__svg {
   margin-right: 7px;
   width: 16px;
@@ -266,6 +280,10 @@ ul {
   height: 12px;
   margin-right: 2px;
   fill: #F06A4D;
+}
+.actions__svg_rotate {
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
 }
 
 .modal__header {
