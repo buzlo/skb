@@ -6,6 +6,17 @@ $input-border-color: #C8C5D1;
 $min-contrast-ratio: 3;
 $color-contrast-dark: #9873FF;
 
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.875,
+  5: $spacer * 3,
+);
+$enable-negative-margins: true;
+
 $input-font-size: 14px;
 $input-line-height: 1.36;
 $input-padding-y: 8px;
@@ -17,7 +28,7 @@ $input-focus-box-shadow: none;
 
 $modal-md: 450px;
 $modal-content-border-radius: 0;
-$modal-inner-padding: 25px 30px;
+$modal-inner-padding: 25px 16px;
 $input-placeholder-color: #B0B0B0;
 $btn-link-color: $body-color;
 $btn-link-padding-y: 5px;
@@ -29,7 +40,6 @@ $tooltip-border-radius: 0;
 $tooltip-opacity: 1;
 $tooltip-arrow-width: .625rem;
 $tooltip-arrow-height: .4rem;
-$spacer: 1rem;
 $tooltip-padding-y: $spacer * .5;
 $tooltip-padding-x: $spacer * .875;
 

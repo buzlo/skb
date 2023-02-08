@@ -6,7 +6,7 @@
 
   const getClientsData = async () => {
     const response = await fetch(`${SERVER_PATH}/api/clients`);
-    const data = response.json();
+    const data = response.json();7
     return data;
   };
 
@@ -444,7 +444,7 @@
         ``
         const $modalBody = document.createElement('div');
 
-        $modalBody.classList.add('modal-body', 'modal__body');
+        $modalBody.classList.add('modal-body', 'modal__body', 'px-md-4');
 
         switch (type) {
           case 'new': {
@@ -559,7 +559,7 @@
               ]),
               $newContactBtnText = document.createElement('span');
 
-            $formContactsBlock.classList.add('modal__form-contacts', 'form-contacts', 'flex');
+            $formContactsBlock.classList.add('modal__form-contacts', 'form-contacts', 'flex', 'mx-md-n4', 'px-md-4', 'mx-n3', 'px-3');
             $contactsList.classList.add('form-contacts__list');
 
             if (contacts) {
