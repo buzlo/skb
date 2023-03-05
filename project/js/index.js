@@ -6,7 +6,7 @@
 
   const getClientsData = async () => {
     const response = await fetch(`${SERVER_PATH}/api/clients`);
-    const data = response.json();7
+    const data = response.json();
     return data;
   };
 
