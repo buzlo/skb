@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skb. CRM Interface</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script defer src="node_modules/choices.js/public/assets/scripts/choices.js"></script>
+  <script defer src="js/index.js"></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $tbody = document.getElementById('clients-tbody');
+      initClientsTable($tbody);
+    })
+  </script>
+</head>
+
+<body id="body">
+  <header class="header">
+    <div class="header__container container-fluid py-2 py-md-3">
+      <div class="row">
+        <svg class="header__logo col-12 col-md-1" viewBox="0 0 50 50">
+          <use xlink:href="img/sprite.svg#skb"></use>
+        </svg>
+        <input type="text" class="header__search-input col d-md-inline-block d-none"
+               placeholder="Введите запрос" id="search-input">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="clients">
+      <div class="clients__container container">
+        <div class="clients__table-wrapper">
+          <h1 class="clients__title">
+            <span class="col">Клиенты</span>
+          </h1>
+          <table class="clients__table table table-hover table-fixed" id="clients-table">
+            <thead class="clients__thead-row thead">
+              <tr class="thead__row">
+                <th scope="col" class="thead__th col-1">
+                  <button class="thead__btn btn active active_up" id="id-btn">
+                    ID
+                    <svg class="thead__arrow" viewBox="0 0 12 12">
+                      <use xlink:href="img/sprite.svg#arrow-up" />
+                    </svg>
+                  </button>
+                </th>
+                <th scope="col" class="thead__th col-3">
+                  <button class="thead__btn btn" id="full-name-btn">
+                    Фамилия имя отчество
+                    <span class="thead__alphabet">
+                      <svg class="thead__arrow" viewBox="0 0 12 12">
+                        <use xlink:href="img/sprite.svg#arrow-down" />
+                      </svg>
+                      А&#8209;Я
+                    </span>
+                  </button>
+                </th>
+                <th scope="col" class="thead__th col-2">
+                  <button class="thead__btn btn" id="created-at-btn">
+                    Дата и время создания&nbsp;
+                    <svg class="thead__arrow" viewBox="0 0 12 12">
+                      <use xlink:href="img/sprite.svg#arrow-down" />
+                    </svg>
+                  </button>
+                </th>
+                <th scope="col" class="thead__th col-2">
+                  <button class="thead__btn btn" id="updated-at-btn">
+                    Последние изменения&nbsp;
+                    <svg class="thead__arrow" viewBox="0 0 12 12">
+                      <use xlink:href="img/sprite.svg#arrow-down" />
+                    </svg>
+                  </button>
+                </th>
+                <th scope="col" class="thead__th col-1">Контакты</th>
+                <th scope="col" class="thead__th col-3">Действия</th>
+              </tr>
+            </thead>
+            <tbody class="clients__tbody" id="clients-tbody">
+              <tr class="clients__placeholder d-none" id="clients-placeholder">
+                <td colspan="6">
+                  <span class="clients__spinner-wrapper">
+                    <svg class="clients__spinner" width="100" heigth="100" viewBox="0 0 100 100">
+                      <use xlink:href="img/sprite.svg#spinner-large" />
+                    </svg>
+                  </span>
+                  <span class="visually-hidden">Loading...</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="clients__new-client-btn new-client-btn btn btn-outline-primary flex"
+                id="new-client-btn">
+          <svg class="new-client-btn__svg" viewBox="0 0 23 16">
+            <use xlink:href="img/sprite.svg#add" />
+          </svg>
+          <span class="new-client-btn__span">Добавить клиента</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
